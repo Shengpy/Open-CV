@@ -1,0 +1,72 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>19ec4cb3-0367-4139-a4df-403805f792b8</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>Color_Detection.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>opencv</Name>
+    <RootNamespace>test2</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Corner_detection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Face_Detection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gesture_Volume_Control.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hand.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Face.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FaceMeshModule.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Finger_Counter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exercise.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Color_Detection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="shape_Detection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Virtual_Mouse.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pose.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="opencv.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
